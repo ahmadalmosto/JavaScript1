@@ -5,9 +5,10 @@ function addToShoppingCart(groceryItem) {
     arr.push(groceryItem);
     if (arr.length > 3) {
         arr.shift();
+        return 'you bougth' + ' ' + arr;
     }
+
 };
 addToShoppingCart('Cola');
 addToShoppingCart('Tomaat');
 addToShoppingCart('Mint');
-console.log(arr);

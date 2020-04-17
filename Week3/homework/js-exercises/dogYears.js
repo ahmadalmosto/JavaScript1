@@ -2,8 +2,8 @@
 
 function calculateDogAge(age) {
     let dogYear = age * 7;
-    console.log(dogYear)
+    return 'your doggie is '+ dogYear+' '+'years old in dog years!'
 };
-calculateDogAge(10);
-calculateDogAge(9);
-calculateDogAge(8);
+console.log(calculateDogAge(10));
+console.log(calculateDogAge(9));
+console.log(calculateDogAge(8));

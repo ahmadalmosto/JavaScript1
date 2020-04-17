@@ -11,14 +11,10 @@ function tellFortune(numChildren, partnerName, locations, jobs) {
     let randomChildren = numChildren[Math.floor(numChildren.length * Math.random())];
     let randomLocation = locations[Math.floor(locations.length * Math.random())];
     let randomNames = partnerName[Math.floor(partnerName.length * Math.random())];
-    console.log(randomNames + " " +
-        randomLocation + " " + randomJobs + " " + randomChildren);
+    return `you will be a ${randomJobs} in ${randomLocation}, and married to ${randomNames} with ${randomChildren} kids`;
+    //console.log('you will be' +randomJobs+ " " +'in'+' '+randomLocation+' '+'and married to'+' '+randomNames+' '+' '+'with'+randomChildren);
+        
 };
 
-tellFortune(partnerName, locations, jobs, numChildren);
+console.log(tellFortune(numChildren,partnerName,locations,jobs));
 
-// function getRandomIntInclusive(min, max) {
-//     min = Math.ceil(min);
-//     max = Math.floor(max);
-//     return Math.floor(Math.random() * (max - min + 1)) + min; //The maximum is inclusive and the minimum is inclusive 
-// }
